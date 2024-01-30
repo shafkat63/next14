@@ -10,30 +10,10 @@ export default function ProductDetailsLayout({
 }) {
 	return (
 		<>
-			{/* <header
-					style={{
-						backgroundColor: "lightblue",
-						padding: "1rem",
-						justifyContent: "center",
-						alignItems: "center",
-						display: "flex",
-					}}
-				>
-					<p>Header</p>
-				</header> */}
+		
 			{children}
 			<h2>Features Products</h2>
-			{/* <footer
-					style={{
-						backgroundColor: "ghostwhite",
-						padding: "1rem",
-						justifyContent: "center",
-						alignItems: "center",
-						display: "flex",
-					}}
-				>
-					<p>Footer</p>
-				</footer> */}
+		
 		</>
 	);
 }
