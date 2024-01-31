@@ -1,3 +1,7 @@
+export const metadata = {
+	title: "About Shafkat",
+};
+
 const About = () => {
 	return <h1>About</h1>;
 };
