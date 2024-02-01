@@ -3,6 +3,7 @@ import Link from "next/link";
 const Home = () => {
 	return (
 		<div className="">
+			
 			<h1>Home page</h1>
 			<div
 				style={{
@@ -16,17 +17,25 @@ const Home = () => {
 				}}
 			>
 				{" "}
-				<Link
-					href="/blog"
-					
-				>
-					Blog
-				</Link>
+				<Link href="/blog">Blog</Link>
 				<Link href="/products">Products</Link>
 				<Link href="/about">About</Link>
-				<Link style={{
+				<Link
+					style={{
 						color: "green",
-					}} href="/dashboard">Dashboard</Link>
+					}}
+					href="/dashboard"
+				>
+					Dashboard
+				</Link>
+				<Link
+					style={{
+						color: "green",
+					}}
+					href="/order-product"
+				>
+					Order Product
+				</Link>
 			</div>
 		</div>
 	);

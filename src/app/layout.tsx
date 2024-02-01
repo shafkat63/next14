@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./globals.css";
 import { Metadata } from "next";
 // const inter = Inter({ subsets: ["latin"] });
@@ -27,7 +28,10 @@ export default function RootLayout({
 						display: "flex",
 					}}
 				>
-					<p>Header</p>
+					<Link href="/">
+						{" "}
+						<p>Header</p>
+					</Link>
 				</header>
 				{children}
 				<footer
