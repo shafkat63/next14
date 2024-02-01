@@ -1,5 +1,5 @@
 "use client";
-import { link } from "fs";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -28,6 +28,7 @@ export default function AuthLayout({
 					</Link>
 				);
 			})}
+			{children}
 		</div>
 	);
 }
