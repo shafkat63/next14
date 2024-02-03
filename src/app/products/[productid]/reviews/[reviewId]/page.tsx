@@ -14,7 +14,7 @@ const ReviewId = ({
 	const random = getRandomInt(2);
 	console.log(random);
 	
-	if (random !== 1) {
+	if (random === 1) {
 		throw new Error("Error loading review");
 	}
 	if (parseInt(params.reviewId) > 1000) {
