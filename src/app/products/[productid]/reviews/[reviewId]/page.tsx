@@ -1,3 +1,4 @@
+'use client'
 import { notFound } from "next/navigation";
 
 const getRandomInt = (count: number) => {
@@ -12,8 +13,7 @@ const ReviewId = ({
 	};
 }) => {
 	const random = getRandomInt(2);
-	console.log(random);
-	
+
 	if (random === 1) {
 		throw new Error("Error loading review");
 	}

@@ -1,8 +1,17 @@
-'use client'
-const ErrorBoundary = () => {
-  return (
-    <div> Error in reviewId</div>
-  )
-}
+"use client";
+const ErrorBoundary = ({
+	error,
+	reset,
+}: {
+	error: Error;
+	reset: () => void;
+}) => {
+	return (
+		<div>
+			{" "}
+			{error.message} <button onClick={reset} class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900">Try again</button>{" "}
+		</div>
+	);
+};
 
-export default ErrorBoundary
+export default ErrorBoundary;
