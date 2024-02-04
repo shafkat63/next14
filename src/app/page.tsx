@@ -36,6 +36,10 @@ const Home = () => {
 				>
 					Order Product
 				</Link>
+				<Link href='complex-dashboard'>
+				Complex Dashboard
+				
+				</Link>
 			</div>
 		</div>
 	);
